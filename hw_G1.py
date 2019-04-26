@@ -4,4 +4,5 @@ def decorator(func):
         f = open(f'{func.__name__}.txt', 'w')
         f.write(str(result))
         f.close()
+        return result
     return wrapped
